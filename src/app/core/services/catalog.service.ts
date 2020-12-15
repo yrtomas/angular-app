@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { IPaginatedItems } from '../models/IPaginatedItems';
+import { PaginatedItems } from '../models/PaginatedItems';
 
 
 @Injectable()
@@ -12,8 +12,8 @@ export class CatalogService {
   ) { }
 
 
-  public Get(): Observable<IPaginatedItems> {
-    return this.httpClient.get<IPaginatedItems>(`http://localhost:49157api/v1/Catalog/items`);
+  public Get(): Observable<PaginatedItems> {
+    return this.httpClient.get<PaginatedItems>(`https://localhost:49165/api/v1/Catalog/items`);
   }
 
   }

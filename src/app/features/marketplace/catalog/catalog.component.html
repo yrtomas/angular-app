@@ -1,10 +1,9 @@
 <div >   
     <h1>que onda REYE</h1>
-    <div *ngIf="catalogItems?.Data">
-        <h1>que onda REYE</h1>
-        <div *ngFor="let CatalogItem of catalogItems?.Data">
+    <div *ngIf="catalogItems?.data">
+        <div *ngFor="let CatalogItem of catalogItems?.data">
             <h3>
-                {{ CatalogItem.Name }}
+                {{ CatalogItem.name }}
             </h3>
           
           </div>

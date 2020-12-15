@@ -1,1 +1,12 @@
-<p>catalog works!</p>
+<div >   
+    <h1>que onda REYE</h1>
+    <div *ngIf="catalogItems?.Data">
+        <h1>que onda REYE</h1>
+        <div *ngFor="let CatalogItem of catalogItems?.Data">
+            <h3>
+                {{ CatalogItem.Name }}
+            </h3>
+          
+          </div>
+    </div>
+</div>

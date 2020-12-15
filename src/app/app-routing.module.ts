@@ -5,7 +5,7 @@ import { HomeComponent } from './core/home/home.component';
 const routes: Routes = [
   {
     path: 'marketplace',
-    loadChildren: './features/marketplace/marketplace.module#MarketplaceModule'
+    loadChildren: () => import('./features/marketplace/marketplace.module').then(m => m.MarketplaceModule)
   },
   {
     path: '',

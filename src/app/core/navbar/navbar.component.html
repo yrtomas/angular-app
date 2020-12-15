@@ -5,9 +5,9 @@
     </button>
   
     <div class="d-flex">
-        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" >
+        <ul ngbNav #nav="ngbNav" class="nav-pills" >
           <li ngbNavItem="top">
-            <a ngbNavLink>Catalog</a>
+            <a [routerLink]="['/marketplace']" ngbNavLink>Marketplace</a>
           </li>
           <li ngbNavItem="middle">
             <a ngbNavLink>Basket</a>
